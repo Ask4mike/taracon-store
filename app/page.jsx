@@ -1,9 +1,10 @@
+"use client";
 import Header from "@/app/Homepage/Header";
 import Footer from "@/app/Homepage/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
       <main>
         <h1 className="underline">
@@ -11,6 +12,6 @@ export default function Home() {
         </h1>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

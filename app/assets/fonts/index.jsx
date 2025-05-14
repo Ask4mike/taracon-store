@@ -20,7 +20,9 @@ export const GillSans = localFont({
     },
     {
       path: "./GillSans/GillSans-Heavy.otf",
-      weight: "200",
+      weight: "700",
     },
   ],
+  variable: "--GillSans-font",
+  display: "swap",
 });
