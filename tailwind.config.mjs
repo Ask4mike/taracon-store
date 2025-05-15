@@ -15,6 +15,17 @@ const config = {
       fontFamily: {
         GillSans: ["var(--GillSans-font)", ...fontFamily.sans],
       },
+      screens: {
+        base: "0px",
+        sm: "640px",
+        md: "900px",
+        "2md": "1000px",
+        lg: "1100px",
+        xl: "1280px",
+        "2xl": "1536px",
+        "3xl": "1920px",
+        "4xl": "2560px",
+      },
     },
   },
   plugins: [],

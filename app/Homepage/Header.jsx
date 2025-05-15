@@ -1,14 +1,20 @@
 import Link from "next/link";
-import {ROUTES} from "@/app/config/constants";
+import Image from "next/image";
+import Logo from "@/public/TLogo.png";
+import { ROUTES } from "@/app/config/constants";
 
 export default function Header() {
   return (
     <header>
-      <h1 className="">This is the header of the application</h1>
-      <nav className="flex gap-4">
-        <Link href={ROUTES.homepage} className="underline text-blue-300">
-          Home
-        </Link>
+      <Link href={ROUTES.homepage}>
+        <Image
+          src={Logo}
+          alt="This is the logo of Taracon Store"
+          width={100}
+          height={100}
+        />
+      </Link>
+      <nav className="">
         <Link href={ROUTES.products} className="underline text-blue-300">
           Products
         </Link>
