@@ -1,6 +1,6 @@
 import { GillSans } from "@/app/assets/fonts";
 import "@/app/styles/globals.css";
-
+import { AppProvider } from "@/app/context/AppContext";
 
 export const metadata = {
   title: "Taracon Store",
@@ -10,7 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${GillSans.className} antialiased`}>{children}</body>
+      <body className={`${GillSans.className} antialiased`}>
+        <AppProvider>{children}</AppProvider>
+      </body>
     </html>
   );
 }
