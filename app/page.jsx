@@ -1,13 +1,13 @@
 "use client";
-import Header from "@/app/Homepage/Header";
-import Footer from "@/app/Homepage/Footer";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Navbar />
       <main>
-        <h1 className="underline">
+        <h1 className="underline font-light">
           This is the main content of the application
         </h1>
       </main>

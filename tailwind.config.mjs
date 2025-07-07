@@ -11,6 +11,9 @@ const config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#137283",
+        secondary: "#61d4c3",
+        accent: "#75d4c7",
       },
       fontFamily: {
         GillSans: ["var(--GillSans-font)", ...fontFamily.sans],
