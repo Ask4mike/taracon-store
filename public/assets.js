@@ -70,7 +70,6 @@ import brown_rice_image from "./brown_rice_image.png";
 import barley_image from "./barley_image.png";
 
 export const assets = {
-  logo,
   search_icon,
   remove_icon,
   arrow_right_icon_colored,

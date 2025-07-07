@@ -7,9 +7,21 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const router = useRouter();
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(true);
   const [seller, setIsSeller] = useState(false);
-  const value = { router, routes, user, setUser, seller, setIsSeller };
+  const [showUserLogin, setShowUserLogin] = useState(false);
+
+  const value = {
+    router,
+    routes,
+    user,
+    setUser,
+    seller,
+    setIsSeller,
+    showUserLogin,
+    setShowUserLogin,
+  };
+
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 
