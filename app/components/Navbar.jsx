@@ -12,7 +12,7 @@ import { useAppContext } from "@/app/context/AppContext";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { user, setUser, setShowUserLogin, router } = useAppContext();
-
+  const [cartModal, setCartModal] = useState(false);
 
   const logout = async () => {
     setUser(null);

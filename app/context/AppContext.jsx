@@ -7,7 +7,7 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const router = useRouter();
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState(false);
   const [seller, setIsSeller] = useState(false);
   const [showUserLogin, setShowUserLogin] = useState(false);
 

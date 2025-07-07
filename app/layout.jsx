@@ -1,5 +1,6 @@
 import { GillSans } from "@/app/assets/fonts";
 import "@/app/styles/globals.css";
+import TopLoader from "@/app/components/top-loader";
 import { AppProvider } from "@/app/context/AppContext";
 
 export const metadata = {
@@ -11,9 +12,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body className={`${GillSans.className} antialiased`}>
+        <TopLoader/>
         <AppProvider>{children}</AppProvider>
       </body>
     </html>
